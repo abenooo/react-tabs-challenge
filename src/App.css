@@ -15,11 +15,64 @@ body {
     margin: 0 auto;
 }
 /* TODO: Add css here */
-.tabs {
+/* .tabs {
 
 }
-
-
+ */
+ .tabs-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+  }
+  
+  .tabs button {
+    flex-grow: 1;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .tabs button.active {
+    background-color: #2a5579;
+    color: #fff;
+  }
+  
+  .tabs button:not(.active):hover {
+    background-color: #444;
+  }
+  
+  .tab-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .tab-content p {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
 @media only screen and (max-width: 960px) {
 
     .container {
