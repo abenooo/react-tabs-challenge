@@ -29,16 +29,16 @@ const Tabs = () => {
     let url = '';
     switch (tabIndex) {
       case 1:
-        url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/1/large';
+        url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/4/large';
         break;
       case 2:
-        url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/2/large';
-        break;
-      case 3:
         url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/3/large';
         break;
+      case 3:
+        url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/2/large';
+        break;
       case 4:
-        url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/4/large';
+        url = 'https://api.allorigins.win/get?url=https://loripsum.net/api/1/large';
         break;
       default:
         break;
