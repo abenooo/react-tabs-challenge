@@ -2,17 +2,26 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../App.css';
 
+/**
+ * Tabs component that displays content in different tabs.
+ * It fetches content from an API based on the active tab.
+ */
+
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(1); // State to track the currently active tab
   const [tabContents, setTabContents] = useState({
     tab1: null,
     tab2: null,
     tab3: null,
     tab4: null,
-  });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  }); // State to store the content of each tab
+  const [loading, setLoading] = useState(false); // State to indicate loading status
+  const [error, setError] = useState(null); // State to store any error messages
 
+  /**
+   * Fetches content for the specified tab index.
+   * @param {number} tabIndex - The index of the tab to fetch content for.
+   */
   const fetchContent = async (tabIndex) => {
     setLoading(true);
     setError(null);
